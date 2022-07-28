@@ -1,0 +1,134 @@
+.photo {
+	background-color: $helper-white;
+	background-image: url(../images/dist/svg/prices__bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.photo__text {
+	a {
+		color: $secondary;
+		text-decoration: none;
+		font-weight: 500;
+		transition: color .2s ease-out;
+		&:hover {
+			color: $accent;
+		}
+	}	
+}
+
+.photo__container {
+	padding-top: 20px;
+}
+
+.photo__image {
+	text-align: center;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.photo__image-first {
+	img {
+		border-radius: 80px 0 80px 0;
+		box-shadow: 20px 20px #ddcabe;
+		@include media-breakpoint-down(md) {
+			border-radius: 40px 0 40px 0;
+			box-shadow: 15px 15px #ddcabe;
+		}
+		@include media-breakpoint-down(sm) {
+			box-shadow: 10px 10px #ddcabe;
+		}
+	}	
+}
+
+.photo__image-second {
+	padding-top: 40px;
+	@include media-breakpoint-down(md) {
+		padding-top: 20px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 10px;
+	}
+	a {
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+	img {		
+		box-shadow: -10px 10px #EEE1C2;
+		width: 267px;
+		height: 267px;
+		border-radius: 50%;
+		@include media-breakpoint-down(lg) {
+			width: 150px;
+			height: 150px;
+		}
+		@include media-breakpoint-down(md) {
+			width: 100px;
+			height: 100px;
+			box-shadow: -7px 7px #EEE1C2;
+		}
+		@include media-breakpoint-down(sm) {
+			width: calc(100% - 10px);
+			height: calc(100% - 10px);
+		}
+			
+	}
+}
+
+.photo__image-third {
+	img {
+		box-shadow: 20px -20px #ddcabe;
+		border-radius: 0 80px 0 80px;
+		@include media-breakpoint-down(md) {
+			border-radius: 0 40px 0 40px;
+			box-shadow: 15px -15px #ddcabe;
+		}
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+}
+
+.photo__image-fourth {
+	img {
+		box-shadow: 20px 20px #ddcabe;
+		height: 286px;
+		@include media-breakpoint-down(lg) {
+			height: 150px;
+			box-shadow: 15px 15px #ddcabe;
+		}
+		@include media-breakpoint-down(sm) {
+			box-shadow: 10px 10px #EEE1C2;
+		}
+	}
+}
+
+.photo__image-fifth {
+	img {
+		box-shadow: -20px -20px #EEE1C2;
+		border-radius: 50% 0 0 50%;
+		@include media-breakpoint-down(md) {
+			box-shadow: -15px -15px #EEE1C2;
+			border-radius: 60px 0 0 60px;
+		}
+		@include media-breakpoint-down(sm) {
+			border-radius: 0 40px 0 40px;
+			box-shadow: 10px -10px #ddcabe;
+		}
+	}
+}
+
+.photo__row {
+	padding-top: 100px;
+	@include media-breakpoint-down(lg) {
+		padding-top: 80px;
+	}
+	@include media-breakpoint-down(md) {
+		padding-top: 60px;
+	}
+}

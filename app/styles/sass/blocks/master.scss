@@ -1,0 +1,93 @@
+.master {
+	background-color: $helper-white;
+	background-image: url(../images/dist/svg/benefits/benefits__bg-small.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.master__img-wrapper {
+	@include media-breakpoint-down(sm) {
+
+	}
+}
+
+.master__text {
+	p {
+		margin: 0;
+	}
+}
+
+.master__img {
+	float: right;
+	width: 300px;
+	height: 420px;
+	box-shadow: 0 -20px #A0563C, 0 20px #A0563C;
+	border-radius: 1000px;
+	margin-right: 60px;
+	@include media-breakpoint-down(lg) {
+		margin-right: 30px;
+	}
+	@include media-breakpoint-down(md) {
+		margin-right: 15px;
+		width: 220px;
+		height: 300px;
+	}
+	@include media-breakpoint-down(sm) {
+		float: none;
+		margin: 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.master__description {
+	@include media-breakpoint-down(sm) {
+		padding-top: 40px;
+	}
+	span, p {
+		margin-left: 60px;
+		@include media-breakpoint-down(lg) {
+			margin-left: 30px;
+		}
+		@include media-breakpoint-down(md) {
+			margin-right: 15px;
+		}
+		@include media-breakpoint-down(sm) {
+			margin: 0;
+		}
+	}
+	span {
+		font-size: 48px;
+		font-family: Calypso, sans-serif;
+		@include media-breakpoint-down(lg) {
+			font-size: 36px;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 24px;
+		}
+	}
+	p {
+		font-size: 36px;
+		font-weight: 500;
+		@include media-breakpoint-down(lg) {
+			font-size: 24px;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 18px;
+		}
+	}
+}
+
+.master__row {
+	padding-top: 70px;
+	@include media-breakpoint-down(md) {
+		padding-top: 50px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding-top: 40px;
+	}
+}

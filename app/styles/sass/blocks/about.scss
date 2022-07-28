@@ -1,0 +1,56 @@
+.about {
+	//background-color: $helper-white;
+	//background-image: url(../images/dist/hands-throwing-pottery.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: -1;
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: -2;
+		background-color: rgba(#40443D, .7);
+	}
+  span {
+    font-family: BarchellaDrumal, sans-serif;
+  }
+}
+
+.about__text {
+	padding: 60px 0;
+	position: relative;
+	z-index: 1;
+	font-size: 36px;	
+	color:  #fff;
+	@include media-breakpoint-down(md) {
+		padding: 30px 15px; //gutter of bootstrap
+	}
+}
+
+.about__header {
+	color: $secondary;
+	text-transform: uppercase;
+	font-size: 48px;
+	font-family: Calypso, sans-serif;
+	margin-bottom: 0;
+	text-align: center;
+	@include media-breakpoint-down(md) {
+		font-size: 36px;
+	}
+}
+
+.about__description {
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 1.4;
+	text-align: center;
+	padding-top: 50px;
+	@include media-breakpoint-down(md) {
+		line-height: 1.3;
+		font-size: 24px;
+		padding-top: 10px;
+	}
+}

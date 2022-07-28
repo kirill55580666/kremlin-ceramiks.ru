@@ -1,0 +1,55 @@
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+			<header class="modal__header">
+				<h2 class="modal__title" id="modal-1-title">Записаться</h2>
+				<button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+			</header>
+			<form class="callback">
+				<main class="modal__content">
+					<!--HIDDEN-->
+					<input type="hidden" name="project_name" value="KREMLIN CERAMIKS">
+					<input type="hidden" name="admin_email" value="kirill55580666@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка">
+					
+					<input class="form-input modal__input" type="text" name="KC-Name" placeholder="Ваше имя...">
+					<input class="form-input modal__input" type="text" name="KC-Phone" placeholder="Ваш телефон..." required>
+					<textarea rows='4' class="form-input modal__input" name="Message" placeholder="Есть вопрос?..."></textarea>
+					<select class="form-input modal__input" name="MasterClass" required>
+						<option disabled selected>Какое занятие выбрали?</option>
+						<option value="Индивидуальное занятие">Индивидуальное занятие</option>
+						<option value="Детское занятие">Детское занятие</option>
+						<option value="Дни рождения">Дни рождения</option>
+						<option value="Абонемент">Абонемент</option>
+						<option value="Есть вопрос">Есть вопрос</option>
+					</select>
+					<div class="modal__messenger">
+						<span>Удобный мессенджер:</span>
+            <span>
+              <input type="checkbox" id="WhatsUp" name="WhatsUp">
+  					  <label for="WhatsUp">WhatsUp</label> 
+            </span>
+
+            <span>
+              <input type="checkbox" id="Telegram" name="Telegram">
+  					  <label for="Telegram">Telegram</label>
+            </span>
+
+					</div>      
+          
+				</main>
+				<footer class="modal__footer">
+					<button class="button modal__button"><span>Отправить</span></button>
+				</footer>
+			</form>
+      <div class="success">
+				<button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+        <h2 class="modal__title" id="modal-1-title">Можешь подписаться на наши соцсети</h2>
+        <a href="https://www.instagram.com/kremlin_ceramiks/" class="footer__soc-item modal__soc-item" target="_blank"><img src="../images/dist/brands/instagram-brands.svg"><span>Наш инстаграмм</span></a>
+        <p>Здесь много фотографий</p>
+        <a href="https://vk.com/public204410554" class="footer__soc-item modal__soc-item" target="_blank"><img src="../images/dist/brands/vk-brands.svg"><span>Наша группа ВК</span></a>
+        <p>А тут много разной полезной информации</p>
+      </div>
+		</div>
+	</div>
+</div>

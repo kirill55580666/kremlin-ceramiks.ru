@@ -1,0 +1,23 @@
+.benifits {
+	//height: 50%;
+	background-color: $helper-white;
+	background-image: url(../images/dist/svg/benefits/benefits__bg-small.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 60px;
+  padding: 0 15px;
+}
+
+.benefits__block {
+	.picture {
+		text-align: center;
+	}
+	.text {
+		width: auto;
+	}
+	.reason {
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+}

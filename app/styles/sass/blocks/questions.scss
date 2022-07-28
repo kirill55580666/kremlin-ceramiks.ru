@@ -1,0 +1,27 @@
+.questions {
+	background-color: $helper-white;
+	font-size: 24px;
+	padding-top: 60px;
+	text-align: center;
+	input, .answer {
+		display: none;
+	}
+	
+	/*position the label*/
+	label {
+		position: relative;
+		display: block;
+		cursor: pointer;
+	}
+	
+	/*show the submenu when input is checked*/
+	input:checked~.answer{
+		display: block;
+	}
+}
+
+.questions__wrapper {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}

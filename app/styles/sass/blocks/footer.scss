@@ -1,0 +1,27 @@
+.footer {
+	padding: 50px 15px;
+	text-align: center;
+	background-color: $accent;
+	color: #fff;
+	background-image: radial-gradient($accent 60%, $accent-bg);
+	a {
+		text-decoration: none;
+		color: #fff;
+    margin: 0 8px;
+	}
+}
+
+.footer__soc-wrapper {
+	padding-top: 25px;
+}
+
+.footer__soc-item {
+	img {
+		height: 45px;
+		width: 45px;
+	}
+}
+
+.footer__adress {
+	padding-top: 25px;	
+}
